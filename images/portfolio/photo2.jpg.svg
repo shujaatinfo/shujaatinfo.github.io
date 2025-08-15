@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#1e1e1e" />
+  <rect x="50" y="50" width="500" height="300" fill="#333" stroke="#d4af37" stroke-width="2" />
+  <text x="300" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">Corporate Event Coverage</text>
+  <text x="300" y="220" font-family="Arial" font-size="18" text-anchor="middle" fill="#d4af37">Portfolio Item</text>
+</svg>

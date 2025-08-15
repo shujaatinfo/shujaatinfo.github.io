@@ -1,0 +1,73 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e1e" />
+      <stop offset="100%" stop-color="#121212" />
+    </linearGradient>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#e5c76b" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="600" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Decorative frame -->
+  <rect x="30" y="30" width="540" height="540" rx="10" fill="none" stroke="url(#gold-gradient)" stroke-width="3" />
+  
+  <!-- Professional silhouette -->
+  <g>
+    <!-- Head -->
+    <circle cx="300" cy="200" r="100" fill="#333" />
+    
+    <!-- Shoulders and upper body -->
+    <path d="M200,300 C200,380 400,380 400,300 L400,420 C400,480 200,480 200,420 Z" fill="#333" />
+    
+    <!-- Facial features suggestion -->
+    <ellipse cx="300" cy="180" rx="60" ry="70" fill="#262626" />
+    
+    <!-- Camera in hand suggestion -->
+    <rect x="380" y="340" width="60" height="40" rx="5" fill="#262626" stroke="#d4af37" stroke-width="2" />
+    <circle cx="410" cy="360" r="15" fill="#1a1a1a" stroke="#d4af37" stroke-width="2" />
+    <circle cx="410" cy="360" r="8" fill="#d4af37" />
+    
+    <!-- Subtle gold accents -->
+    <path d="M300,240 Q330,260 350,240" fill="none" stroke="#d4af37" stroke-width="2" />
+    <rect x="270" y="300" width="60" height="5" rx="2" fill="#d4af37" />
+  </g>
+  
+  <!-- Camera lens elements -->
+  <g opacity="0.8">
+    <circle cx="150" cy="150" r="40" fill="none" stroke="#d4af37" stroke-width="1" />
+    <circle cx="150" cy="150" r="30" fill="none" stroke="#d4af37" stroke-width="1" />
+    <circle cx="150" cy="150" r="20" fill="none" stroke="#d4af37" stroke-width="1" />
+    <line x1="110" y1="150" x2="190" y2="150" stroke="#d4af37" stroke-width="1" />
+    <line x1="150" y1="110" x2="150" y2="190" stroke="#d4af37" stroke-width="1" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <g>
+    <circle cx="480" cy="120" r="30" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.6" />
+    <circle cx="120" cy="480" r="30" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.6" />
+    <path d="M50,50 L80,80" stroke="#d4af37" stroke-width="2" opacity="0.8" />
+    <path d="M550,50 L520,80" stroke="#d4af37" stroke-width="2" opacity="0.8" />
+    <path d="M50,550 L80,520" stroke="#d4af37" stroke-width="2" opacity="0.8" />
+    <path d="M550,550 L520,520" stroke="#d4af37" stroke-width="2" opacity="0.8" />
+  </g>
+  
+  <!-- Light rays -->
+  <g opacity="0.3">
+    <path d="M300,500 L350,550" stroke="#ffffff" stroke-width="1" />
+    <path d="M300,500 L380,540" stroke="#ffffff" stroke-width="1" />
+    <path d="M300,500 L400,520" stroke="#ffffff" stroke-width="1" />
+    <path d="M300,500 L250,550" stroke="#ffffff" stroke-width="1" />
+    <path d="M300,500 L220,540" stroke="#ffffff" stroke-width="1" />
+    <path d="M300,500 L200,520" stroke="#ffffff" stroke-width="1" />
+  </g>
+  
+  <!-- Professional Photographer text -->
+  <text x="300" y="530" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">Professional Photographer</text>
+  <text x="300" y="560" font-family="Arial" font-size="16" text-anchor="middle" fill="#d4af37">Shujaat Siddiqui</text>
+</svg>
