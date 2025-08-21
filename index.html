@@ -175,39 +175,112 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Work</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="photography">Photography</button>
-                <button class="filter-btn" data-filter="videography">Videography</button>
-                <button class="filter-btn" data-filter="drone">Drone</button>
-                <button class="filter-btn" data-filter="design">Graphic Design</button>
-            </div>
-            <div class="portfolio-grid">
-                <!-- Portfolio items will be dynamically added with JavaScript -->
-                <!-- Example structure for a portfolio item: -->
-                <div class="portfolio-item photography">
-                    <div class="portfolio-img">
-                        <img src="images/portfolio/photo1.jpg.svg" alt="Portfolio Item">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <h3>Project Title</h3>
-                            <p>Photography</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- More portfolio items will be added dynamically -->
-            </div>
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section-padding">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Work</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="portfolio-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="photography">Photography</button>
+      <button class="filter-btn" data-filter="videography">Videography</button>
+      <button class="filter-btn" data-filter="design">Graphic Design</button>
+    </div>
+
+    <!-- Sub-tabs for Videography -->
+    <div class="videography-subfilter" style="display: none; margin-top: 15px;">
+      <button class="sub-filter-btn" data-filter="ngo-documentaries">NGO Documentaries</button>
+      <button class="sub-filter-btn" data-filter="reels-tiktok-shorts">Reels / TikTok / Shorts</button>
+      <button class="sub-filter-btn" data-filter="aerial-view-drone">Aerial View (Drone)</button>
+      <button class="sub-filter-btn" data-filter="islamic-videos">Islamic Videos</button>
+      <button class="sub-filter-btn" data-filter="wedding-promos">Wedding Promos</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- NGO Documentaries -->
+      <div class="portfolio-item videography ngo-documentaries">
+        <div class="portfolio-img">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1RtHbR-PtWg" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
+        <div class="portfolio-info"><h3>NGO Documentary 1</h3></div>
+      </div>
+
+      <div class="portfolio-item videography ngo-documentaries">
+        <div class="portfolio-img">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/0ot-K0sRFAo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="portfolio-info"><h3>NGO Documentary 2</h3></div>
+      </div>
+
+      <!-- Coming Soon Placeholders for Videography Sub-categories -->
+      <div class="portfolio-item videography reels-tiktok-shorts">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Reels / TikTok / Shorts</h3></div>
+      </div>
+
+      <div class="portfolio-item videography aerial-view-drone">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Aerial View (Drone)</h3></div>
+      </div>
+
+      <div class="portfolio-item videography islamic-videos">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Islamic Videos</h3></div>
+      </div>
+
+      <div class="portfolio-item videography wedding-promos">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Wedding Promos</h3></div>
+      </div>
+
+      <!-- Photography Placeholder -->
+      <div class="portfolio-item photography">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Photography</h3></div>
+      </div>
+      
+      <!-- Graphic Design Placeholder -->
+      <div class="portfolio-item design">
+        <div class="portfolio-img">
+          <div class="coming-soon-container">
+            <img src="images/comingsoon.jpg" alt="Coming Soon">
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+        </div>
+        <div class="portfolio-info"><h3>Graphic Design</h3></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
