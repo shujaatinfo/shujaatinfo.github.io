@@ -67,6 +67,24 @@ header nav ul li a {color:#fff; text-decoration:none;}
     box-sizing: border-box;
 }
 
+body { 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+    background: #000; /* fallback */
+}
+
+#dark-veil { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1; 
+}
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -96,6 +114,20 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
+}
+
+/* Base Styles */
+:root {
+    --dark-bg: #121212;
+    --dark-secondary: #1e1e1e;
+    --gold: #d4af37;
+    --gold-light: #e5c76b;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --gray: #888888;
+    --dark-gray: #333333;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -490,6 +522,60 @@ nav {
 }
 
 /* ===== Portfolio Section (Final Clean Version) ===== */
+/* Portfolio Modal */
+.portfolio-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--dark-bg);
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--light-gray);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--gold);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body {
+    padding: 10px 0;
+}
 .portfolio {
     background-color: var(--dark-bg); /* پورے سیکشن کے لیے ڈارک بیک گراؤنڈ */
     color: var(--white);
@@ -501,12 +587,12 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .videography-subfilter {
     margin-top: -20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
@@ -516,8 +602,8 @@ nav {
 .sub-filter-btn {
     background: none;
     border: 1px solid rgba(212, 175, 55, 0.5);
-    color: var(--white);
-    font-size: 0.9rem;
+    color: var(--light-gray);
+    font-size: 0.85rem;
     font-weight: 500;
     padding: 8px 20px;
     margin: 0 5px 10px;
@@ -528,7 +614,7 @@ nav {
 
 .sub-filter-btn {
     padding: 6px 15px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .filter-btn.active,
@@ -551,13 +637,61 @@ nav {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     background-color: var(--dark-secondary); /* ہر باکس کے لیے ڈارک کلر */
+    transition: var(--transition);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
 }
 
 .portfolio-img img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     transition: var(--transition);
+}
+
+/* Video thumbnail styling */
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    filter: brightness(0.8);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(212, 175, 55, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    color: var(--dark-bg);
+    font-size: 24px;
+}
+
+.video-thumbnail:hover .play-button {
+    background-color: var(--gold);
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .coming-soon-container {
@@ -605,18 +739,20 @@ nav {
 
 .portfolio-info {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .portfolio-info h3 {
-    color: var(--white);
+    color: var(--light-gray);
+    font-size: 1.1rem;
     margin-bottom: 5px;
     transition: var(--transition);
+    font-weight: 500;
 }
 
 .portfolio-info p {
     color: var(--gold);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .portfolio-link {
@@ -775,6 +911,17 @@ footer {
     from {
         opacity: 0;
         transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;

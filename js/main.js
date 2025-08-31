@@ -1,9 +1,15 @@
 // === Portfolio Filtering === //
 document.addEventListener("DOMContentLoaded", function () {
+    
+    // Portfolio Filtering
     const filterBtns = document.querySelectorAll(".filter-btn");
     const subFilter = document.querySelector(".videography-subfilter");
     const subFilterBtns = document.querySelectorAll(".sub-filter-btn");
     const portfolioItems = document.querySelectorAll(".portfolio-item");
+    const modal = document.querySelector(".portfolio-modal");
+    const modalClose = document.querySelector(".modal-close");
+    const modalBody = document.querySelector(".modal-body");
+    const videoThumbnails = document.querySelectorAll(".video-thumbnail");
 
     // Main filter buttons
     filterBtns.forEach((btn) => {
@@ -48,5 +54,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.style.display = "none";
             }
         });
+    }
+    
+    // Video Modal Functionality
+    videoThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function() {
+            const videoUrl = this.querySelector(".video-data").getAttribute("data-video-url");
+            modalBody.innerHTML = `<iframe width="100%" height="500" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+        });
+    });
+    
+    // Close modal
+    modalClose.addEventListener("click", function() {
+        closeModal();
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener("click", function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal function
+    function closeModal() {
+        modal.style.display = "none";
+        modalBody.innerHTML = ""; // Clear iframe to stop video
+        document.body.style.overflow = "auto"; // Re-enable scrolling
     }
 });
