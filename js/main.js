@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const subFilter = document.querySelector(".videography-subfilter");
     const subFilterBtns = document.querySelectorAll(".sub-filter-btn");
     const portfolioItems = document.querySelectorAll(".portfolio-item");
-    const modal = document.querySelector(".portfolio-modal");
-    const modalClose = document.querySelector(".modal-close");
-    const modalBody = document.querySelector(".modal-body");
+    const modal = document.querySelector(".shj-portfolio-modal");
+    const modalClose = document.querySelector(".shj-modal-close");
+    const modalBody = document.querySelector(".shj-modal-body");
     const videoThumbnails = document.querySelectorAll(".video-thumbnail");
+    const photoThumbnails = document.querySelectorAll(".photo-thumbnail");
 
     // Main filter buttons
     filterBtns.forEach((btn) => {
@@ -59,10 +60,62 @@ document.addEventListener("DOMContentLoaded", function () {
     // Video Modal Functionality
     videoThumbnails.forEach(thumbnail => {
         thumbnail.addEventListener("click", function() {
-            const videoUrl = this.querySelector(".video-data").getAttribute("data-video-url");
-            modalBody.innerHTML = `<iframe width="100%" height="500" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+            const videoUrl = this.getAttribute("data-video-url");
+            // Add autoplay=1 parameter to the URL
+            const autoplayUrl = videoUrl.includes('?') ? 
+                `${videoUrl}&autoplay=1` : 
+                `${videoUrl}?autoplay=1`;
+            
+            modalBody.innerHTML = `<iframe width="100%" height="500" src="${autoplayUrl}" frameborder="0" allowfullscreen allow="autoplay"></iframe>`;
             modal.style.display = "flex";
             document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+        });
+    });
+    
+    // Photo Modal Functionality
+    photoThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function() {
+            const imgSrc = this.getAttribute("data-img-src");
+            const imgAlt = this.querySelector("img").getAttribute("alt") || "Image";
+            
+            modalBody.innerHTML = `
+                <div class="shj-image-container">
+                    <img src="${imgSrc}" alt="${imgAlt}" class="shj-modal-image">
+                    <div class="shj-zoom-controls">
+                        <button class="shj-zoom-in"><i class="fa fa-search-plus"></i></button>
+                        <button class="shj-zoom-out"><i class="fa fa-search-minus"></i></button>
+                        <button class="shj-zoom-reset"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+            
+            // Zoom functionality
+            let scale = 1;
+            const image = document.querySelector('.shj-modal-image');
+            const zoomIn = document.querySelector('.shj-zoom-in');
+            const zoomOut = document.querySelector('.shj-zoom-out');
+            const zoomReset = document.querySelector('.shj-zoom-reset');
+            
+            zoomIn.addEventListener('click', function() {
+                scale += 0.1;
+                image.style.transform = `scale(${scale})`;
+            });
+            
+            zoomOut.addEventListener('click', function() {
+                if (scale > 0.5) {
+                    scale -= 0.1;
+                    image.style.transform = `scale(${scale})`;
+                }
+            });
+            
+            zoomReset.addEventListener('click', function() {
+                scale = 1;
+                image.style.transform = `scale(${scale})`;
+                image.style.transition = 'transform 0.3s ease';
+            });
         });
     });
     
@@ -74,6 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close modal when clicking outside
     window.addEventListener("click", function(e) {
         if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && modal.style.display === "flex") {
             closeModal();
         }
     });

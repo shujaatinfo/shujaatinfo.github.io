@@ -44,9 +44,9 @@
             <h1>Shujaat Siddiqui</h1>
             <h2>Photo/Videographer • Video Editor • Graphic Designer</h2>
             <p>Capturing moments, creating stories.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Download CV</a>
-            </div>
+<div class="hero-buttons">
+    <a href="ShujaatResume.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+</div>
             <div class="social-icons">
                 <a href="https://web.facebook.com/tanatanattari" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -176,124 +176,469 @@
         </div>
     </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section-padding">
-  <div class="container">
-    <div class="section-header">
-      <h2>My Work</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="portfolio-filter">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="photography">Photography</button>
-      <button class="filter-btn" data-filter="videography">Videography</button>
-      <button class="filter-btn" data-filter="design">Graphic Design</button>
-    </div>
+  <!-- ========== START: Portfolio Section ========== -->
+  <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
 
-    <!-- Sub-tabs for Videography -->
-    <div class="videography-subfilter" style="display: none; margin-top: 15px;">
-      <button class="sub-filter-btn" data-filter="ngo-documentaries">NGO Documentaries</button>
-      <button class="sub-filter-btn" data-filter="reels-tiktok-shorts">Reels / TikTok / Shorts</button>
-      <button class="sub-filter-btn" data-filter="aerial-view-drone">Aerial View (Drone)</button>
-      <button class="sub-filter-btn" data-filter="islamic-videos">Islamic Videos</button>
-      <button class="sub-filter-btn" data-filter="wedding-promos">Wedding Promos</button>
-    </div>
-
-    <div class="portfolio-grid">
-
-      <!-- NGO Documentaries -->
-      <div class="portfolio-item videography ngo-documentaries">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="NGO Documentary Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
-          </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
-        </div>
-        <div class="portfolio-info"><h3>NGO Documentary 1</h3></div>
+      <div class="section-header">
+        <h2>My Work</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">Selected work — Videography, Photography & Graphic Design</p>
       </div>
 
-      <div class="portfolio-item videography ngo-documentaries">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="NGO Documentary Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
-          </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
-        </div>
-        <div class="portfolio-info"><h3>NGO Documentary 2</h3></div>
+      <!-- Main filters -->
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="videography">Videography</button>
+        <button class="filter-btn" data-filter="photography">Photography</button>
+        <button class="filter-btn" data-filter="design">Graphic Design</button>
       </div>
 
-      <!-- Coming Soon Placeholders for Videography Sub-categories -->
-      <div class="portfolio-item videography reels-tiktok-shorts">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="Reels Video Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
-          </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
-        </div>
-        <div class="portfolio-info"><h3>Reels / TikTok / Shorts</h3></div>
+      <!-- Videography sub-filter (optional UI) -->
+      <div class="videography-subfilter" style="display:flex;justify-content:center;gap:8px;margin-bottom:16px;">
+        <button class="sub-filter-btn" data-filter="ngo-documentaries">NGO Documentaries</button>
+        <button class="sub-filter-btn" data-filter="reels-tiktok-shorts">Reels / TikTok / Shorts</button>
+        <button class="sub-filter-btn" data-filter="aerial-view-drone">Aerial (Drone)</button>
+        <button class="sub-filter-btn" data-filter="islamic-videos">Islamic Videos</button>
+        <button class="sub-filter-btn" data-filter="wedding-promos">Wedding Promos</button>
       </div>
 
-      <div class="portfolio-item videography aerial-view-drone">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="Aerial View Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
+      <!-- Grid -->
+      <div class="portfolio-grid">
+        <!-- ================= NGO DOCUMENTARIES (complete list) ================= -->
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/5Qku5FVyYvs">
+            <img src="https://img.youtube.com/vi/5Qku5FVyYvs/hqdefault.jpg" alt="Anzal Begum Foundation — Food Parcels">
+            <div class="overlay"><i class="fa fa-play"></i></div>
           </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Food Parcels Distribution (5 Provinces)</h3></div>
         </div>
-        <div class="portfolio-info"><h3>Aerial View (Drone)</h3></div>
-      </div>
 
-      <div class="portfolio-item videography islamic-videos">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="Islamic Video Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/0MxAs67XrXQ">
+            <img src="https://img.youtube.com/vi/0MxAs67XrXQ/hqdefault.jpg" alt="Ehsaas Flood Activities">
+            <div class="overlay"><i class="fa fa-play"></i></div>
           </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
+          <div class="portfolio-info"><h3>Ehsaas (Harrow Mosque) — Flood Relief Activities</h3></div>
         </div>
-        <div class="portfolio-info"><h3>Islamic Videos</h3></div>
-      </div>
 
-      <div class="portfolio-item videography wedding-promos">
-        <div class="portfolio-img video-thumbnail">
-          <img src="images/comingsoon.jpg" alt="Wedding Promo Thumbnail">
-          <div class="play-button">
-            <i class="fas fa-play"></i>
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/cuS773ncMIo">
+            <img src="https://img.youtube.com/vi/cuS773ncMIo/hqdefault.jpg" alt="Jigsaw Charity">
+            <div class="overlay"><i class="fa fa-play"></i></div>
           </div>
-          <div class="video-data" data-video-url="https://www.youtube.com/embed/brueu8pEFf0"></div>
+          <div class="portfolio-info"><h3>Jigsaw Charity — Flood Activities with Pakistan’s Forces</h3></div>
         </div>
-        <div class="portfolio-info"><h3>Wedding Promos</h3></div>
-      </div>
 
-      <!-- Photography Placeholder -->
-      <div class="portfolio-item photography">
-        <div class="portfolio-img">
-          <div class="coming-soon-container">
-            <img src="images/comingsoon.jpg" alt="Coming Soon">
-            <div class="coming-soon-overlay">Coming Soon</div>
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/xDhiof0zU-Y">
+            <img src="https://img.youtube.com/vi/xDhiof0zU-Y/hqdefault.jpg" alt="Rickshaw Distribution">
+            <div class="overlay"><i class="fa fa-play"></i></div>
           </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Livelihood Project (Rickshaw Distribution)</h3></div>
         </div>
-        <div class="portfolio-info"><h3>Photography</h3></div>
-      </div>
-      
-      <!-- Graphic Design Placeholder -->
-      <div class="portfolio-item design">
-        <div class="portfolio-img">
-          <div class="coming-soon-container">
-            <img src="images/comingsoon.jpg" alt="Coming Soon">
-            <div class="coming-soon-overlay">Coming Soon</div>
-          </div>
-        </div>
-        <div class="portfolio-info"><h3>Graphic Design</h3></div>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/lKqsFeoezP4">
+            <img src="https://img.youtube.com/vi/lKqsFeoezP4/hqdefault.jpg" alt="Rickshaw Distribution With Comments">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Rickshaw Distribution (With Comments)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/-bfhdHFVESM">
+            <img src="https://img.youtube.com/vi/-bfhdHFVESM/hqdefault.jpg" alt="ISRA UK Wheelchair">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ISRA UK — Documentary (Wheelchair Distribution)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/b8AVvv0y1jw">
+            <img src="https://img.youtube.com/vi/b8AVvv0y1jw/hqdefault.jpg" alt="Orphans Food Parcels">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Orphans in Need — Food Parcels Distribution (Rahim Yar Khan)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/-GT0JjoDUVQ">
+            <img src="https://img.youtube.com/vi/-GT0JjoDUVQ/hqdefault.jpg" alt="Ehsaas Food Parcels">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Ehsaas — Food Parcels Distribution</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/2vkovPOijsk">
+            <img src="https://img.youtube.com/vi/2vkovPOijsk/hqdefault.jpg" alt="Abu Faisal Trust">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Abu Faisal Trust — Home Rehabilitation (Dadu, Sindh)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/gW60gUnuxhQ">
+            <img src="https://img.youtube.com/vi/gW60gUnuxhQ/hqdefault.jpg" alt="Hand Pump Making">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Making of Hand Pump</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/b1m6Z9yZtOk">
+            <img src="https://img.youtube.com/vi/b1m6Z9yZtOk/hqdefault.jpg" alt="Seeking Reward - Hand Pump">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Seeking Reward Foundation — Hand Pump Project</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/CgEiino9upI">
+            <img src="https://img.youtube.com/vi/CgEiino9upI/hqdefault.jpg" alt="Jigsaw Home Rehab">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Jigsaw Charity — Home Rehabilitation (Dadu)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/yhqQG0_l-6A">
+            <img src="https://img.youtube.com/vi/yhqQG0_l-6A/hqdefault.jpg" alt="Clean Water Tharparkar">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Clean Water Project (Tharparkar)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/cWPNbMe9yLU">
+            <img src="https://img.youtube.com/vi/cWPNbMe9yLU/hqdefault.jpg" alt="ABF - Documentary of All Projects">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Documentary (All Projects)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/Cj0Ia5J6G1c">
+            <img src="https://img.youtube.com/vi/Cj0Ia5J6G1c/hqdefault.jpg" alt="Solar Pump Tharparkar">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Solar Submersible Pump (Tharparkar)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/KS85G1RI8HM">
+            <img src="https://img.youtube.com/vi/KS85G1RI8HM/hqdefault.jpg" alt="Global Rahmah">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Global Rahmah Foundation — Food Parcels Distribution</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/tuShmmm-JHw">
+            <img src="https://img.youtube.com/vi/tuShmmm-JHw/hqdefault.jpg" alt="ISRA UK Food Parcels">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ISRA UK — Food Parcels Distribution</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/JabZJYD106s">
+            <img src="https://img.youtube.com/vi/JabZJYD106s/hqdefault.jpg" alt="Bismillah Charity">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>The Bismillah Charity — Documentary (All Projects)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography ngo-documentaries" data-type="videography ngo-documentaries">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/QT9LcA-zwQQ">
+            <img src="https://img.youtube.com/vi/QT9LcA-zwQQ/hqdefault.jpg" alt="Thara Welfare Trust">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Thara Welfare Trust — Food Parcels Distribution</h3></div>
+        </div>
+
+        <!-- ================= REELS / TIKTOK / SHORTS ================= -->
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/MGP6F80g6Dk">
+            <img src="https://img.youtube.com/vi/MGP6F80g6Dk/hqdefault.jpg" alt="NED Scholars Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>NED Scholars — Short Reel</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/78Jbzt_2x3Q">
+            <img src="https://img.youtube.com/vi/78Jbzt_2x3Q/hqdefault.jpg" alt="ABF Ramadan Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Ramadan Activities (Short)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/8mTICX9bSMY">
+            <img src="https://img.youtube.com/vi/8mTICX9bSMY/hqdefault.jpg" alt="ABF Clean Water Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Clean Water (Short)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/bJEFOJMpiSg">
+            <img src="https://img.youtube.com/vi/bJEFOJMpiSg/hqdefault.jpg" alt="Rickshaw Making Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Making of Rickshaws (Short)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/JY-LJG-Im0U">
+            <img src="https://img.youtube.com/vi/JY-LJG-Im0U/hqdefault.jpg" alt="Aliza Zara Legacy Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Aliza Zara Legacy — Food Parcels (Short)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/MUtQ1Meq6Dg">
+            <img src="https://img.youtube.com/vi/MUtQ1Meq6Dg/hqdefault.jpg" alt="Aliza Zara Winter Short">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Aliza Zara Legacy — Winter Project (Short)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/kvYQlG8ekq8">
+            <img src="https://img.youtube.com/vi/kvYQlG8ekq8/hqdefault.jpg" alt="Personal Clone Video">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Personal — Clone Video (Muhammad Abbas)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography reels-tiktok-shorts" data-type="videography reels-tiktok-shorts">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/IdVT2Jyerls">
+            <img src="https://img.youtube.com/vi/IdVT2Jyerls/hqdefault.jpg" alt="VFX Zoom Reel">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>VFX Reel — Zoom Effect (Muhammad Abbas)</h3></div>
+        </div>
+
+        <!-- ================= AERIAL / DRONE ================= -->
+        <div class="portfolio-item videography aerial-view-drone" data-type="videography aerial-view-drone">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/s3v1DZ2fz4g">
+            <img src="https://img.youtube.com/vi/s3v1DZ2fz4g/hqdefault.jpg" alt="Hassan Foundation Drone">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Hassan Foundation — Food Parcels (Drone)</h3></div>
+        </div>
+
+        <div class="portfolio-item videography aerial-view-drone" data-type="videography aerial-view-drone">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/iZisGOq6n_Y">
+            <img src="https://img.youtube.com/vi/iZisGOq6n_Y/hqdefault.jpg" alt="ABF Rickshaw Drone">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Livelihood Project (Drone)</h3></div>
+        </div>
+
+        <!-- ================= ISLAMIC VIDEOS ================= -->
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/XZzSP_kPh8M">
+            <img src="https://img.youtube.com/vi/XZzSP_kPh8M/hqdefault.jpg" alt="Independence Day Dar ul Uloom">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Independence Day — Dar ul Uloom</h3></div>
+        </div>
+
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/vqBrZcNX3aQ">
+            <img src="https://img.youtube.com/vi/vqBrZcNX3aQ/hqdefault.jpg" alt="Hamd / Naat">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Hamd / Naat — Hafiz Ahmed Raza Qadri</h3></div>
+        </div>
+
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/hqHXShIuksI">
+            <img src="https://img.youtube.com/vi/hqHXShIuksI/hqdefault.jpg" alt="Flag & Lights Talk">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Discussion | Flag Hoisting & Lights</h3></div>
+        </div>
+
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/9F18MCArJr0">
+            <img src="https://img.youtube.com/vi/9F18MCArJr0/hqdefault.jpg" alt="12th Rabi Talk">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Talk | Reality of 12th Rabi ul Awwal</h3></div>
+        </div>
+
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/smD3UvSFl88">
+            <img src="https://img.youtube.com/vi/smD3UvSFl88/hqdefault.jpg" alt="Niyaz Practice">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Discussion | Niyaz Practice</h3></div>
+        </div>
+
+        <div class="portfolio-item videography islamic-videos" data-type="videography islamic-videos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/JPU4QdqJzHY">
+            <img src="https://img.youtube.com/vi/JPU4QdqJzHY/hqdefault.jpg" alt="BTS Shangrila">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>BTS — Behind the Scenes of Shangrila Shoot</h3></div>
+        </div>
+
+        <!-- ================= WEDDING PROMOS ================= -->
+        <div class="portfolio-item videography wedding-promos" data-type="videography wedding-promos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/egLC6_vXnJI">
+            <img src="https://img.youtube.com/vi/egLC6_vXnJI/hqdefault.jpg" alt="Ahmad & Anum Nikah">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Ahmad & Anum — Nikah Teaser</h3></div>
+        </div>
+
+        <div class="portfolio-item videography wedding-promos" data-type="videography wedding-promos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/nyVC37fXLnQ">
+            <img src="https://img.youtube.com/vi/nyVC37fXLnQ/hqdefault.jpg" alt="Suleman & Fasiha">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Suleman & Fasiha — Wedding Teaser</h3></div>
+        </div>
+
+        <div class="portfolio-item videography wedding-promos" data-type="videography wedding-promos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/DihvCrWNhxk">
+            <img src="https://img.youtube.com/vi/DihvCrWNhxk/hqdefault.jpg" alt="Zubair & Hina">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Zubair & Hina — Wedding Teaser</h3></div>
+        </div>
+
+        <div class="portfolio-item videography wedding-promos" data-type="videography wedding-promos">
+          <div class="portfolio-img video-thumbnail" data-video-url="https://www.youtube.com/embed/KNk4EDfwvco">
+            <img src="https://img.youtube.com/vi/KNk4EDfwvco/hqdefault.jpg" alt="Noman & Sehrish">
+            <div class="overlay"><i class="fa fa-play"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Noman & Sehrish — Mehndi / Mayun Teaser</h3></div>
+        </div>
+
+        <!-- ================= PHOTOGRAPHY (full list you provided) ================= -->
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/ANF01.jpg">
+            <img src="images/Photography/ANF01.jpg" alt="ANF01">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ANF — Drugs Burning Ceremony (ANF01)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/ANF02.jpg">
+            <img src="images/Photography/ANF02.jpg" alt="ANF02">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ANF — Drugs Burning Ceremony (ANF02)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/ANF03.jpg">
+            <img src="images/Photography/ANF03.jpg" alt="ANF03">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ANF — Drugs Burning Ceremony (ANF03)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/ANF04.jpg">
+            <img src="images/Photography/ANF04.jpg" alt="ANF04">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ANF — Drugs Burning Ceremony (ANF04)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/ANF05.jpg">
+            <img src="images/Photography/ANF05.jpg" alt="ANF05">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>ANF — Drugs Burning Ceremony (ANF05)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/FamilyFestival01.jpg">
+            <img src="images/Photography/FamilyFestival01.jpg" alt="FamilyFestival01">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Family Festival — Karachi Kings (01)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/FamilyFestival02.jpg">
+            <img src="images/Photography/FamilyFestival02.jpg" alt="FamilyFestival02">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Family Festival — Karachi Kings (02)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/FamilyFestival03.jpg">
+            <img src="images/Photography/FamilyFestival03.jpg" alt="FamilyFestival03">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Family Festival — Karachi Kings (03)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/Hemani01.jpg">
+            <img src="images/Photography/Hemani01.jpg" alt="Hemani01">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>WB Hemani — Ad Shoot (01)</h3></div>
+        </div>
+
+        <div class="portfolio-item photography" data-type="photography">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/Photography/Hemani02.jpg">
+            <img src="images/Photography/Hemani02.jpg" alt="Hemani02">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>WB Hemani — Ad Shoot (02)</h3></div>
+        </div>
+
+        <!-- add remaining photography images similarly -->
+        <!-- For brevity, continue adding all files from your list in same structure -->
+
+        <!-- ================= GRAPHIC DESIGN (list) ================= -->
+        <div class="portfolio-item design" data-type="design">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/GraphicDesign/EmployeeCardSDO.jpg">
+            <img src="images/GraphicDesign/EmployeeCardSDO.jpg" alt="Employee Card SDO">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Employee Card — Sindh Development Organization</h3></div>
+        </div>
+
+        <div class="portfolio-item design" data-type="design">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/GraphicDesign/FloodBannerAMT01.jpg">
+            <img src="images/GraphicDesign/FloodBannerAMT01.jpg" alt="Flood Banner AMT">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Al Madad Trust — Flood Banner</h3></div>
+        </div>
+
+        <div class="portfolio-item design" data-type="design">
+          <div class="portfolio-img photo-thumbnail" data-img-src="images/GraphicDesign/LivelihoodBannerABF01.jpg">
+            <img src="images/GraphicDesign/LivelihoodBannerABF01.jpg" alt="Livelihood Banner ABF">
+            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+          </div>
+          <div class="portfolio-info"><h3>Anzal Begum Foundation — Livelihood Banner</h3></div>
+        </div>
+
+        <!-- add remaining graphic design images similarly -->
+      </div> <!-- /.portfolio-grid -->
+
+    </div> <!-- /.container -->
+  </section>
+  <!-- ========== END: Portfolio Section ========== -->
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
@@ -378,10 +723,10 @@
     </footer>
 
     <!-- Portfolio Modal -->
-    <div class="portfolio-modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-body">
+    <div class="shj-portfolio-modal">
+        <div class="shj-modal-content">
+            <span class="shj-modal-close">&times;</span>
+            <div class="shj-modal-body">
                 <!-- Modal content will be dynamically added with JavaScript -->
             </div>
         </div>

@@ -523,7 +523,7 @@ nav {
 
 /* ===== Portfolio Section (Final Clean Version) ===== */
 /* Portfolio Modal */
-.portfolio-modal {
+.shj-portfolio-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -537,7 +537,7 @@ nav {
     justify-content: center;
 }
 
-.modal-content {
+.shj-modal-content {
     position: relative;
     background-color: var(--dark-bg);
     margin: 0 auto;
@@ -549,7 +549,7 @@ nav {
     animation: modalFadeIn 0.3s ease;
 }
 
-.modal-close {
+.shj-modal-close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -568,13 +568,56 @@ nav {
     transition: all 0.3s ease;
 }
 
-.modal-close:hover {
+.shj-modal-close:hover {
     color: var(--gold);
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-body {
+.shj-modal-body {
     padding: 10px 0;
+}
+
+/* Image Modal Styling */
+.shj-image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.shj-modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.shj-zoom-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1005;
+}
+
+.shj-zoom-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.shj-zoom-controls button:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
 }
 .portfolio {
     background-color: var(--dark-bg); /* پورے سیکشن کے لیے ڈارک بیک گراؤنڈ */
@@ -636,7 +679,7 @@ nav {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    background-color: var(--dark-secondary); /* ہر باکس کے لیے ڈارک کلر */
+    background-color: var(--dark-secondary);
     transition: var(--transition);
 }
 
@@ -656,6 +699,29 @@ nav {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 175, 55, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-item .overlay i {
+    color: var(--dark-bg);
+    font-size: 24px;
 }
 
 /* Video thumbnail styling */
