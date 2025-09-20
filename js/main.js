@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Active state
             subFilterBtns.forEach((b) => b.classList.remove("active"));
             this.classList.add("active");
+            this.classList.add("active");
 
             showItems(filter);
         });
@@ -144,4 +145,10 @@ document.addEventListener("DOMContentLoaded", function () {
         modalBody.innerHTML = ""; // Clear iframe to stop video
         document.body.style.overflow = "auto"; // Re-enable scrolling
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Graphic Designing wale button ko default click kar do
+    document.querySelector('.filter-btn[data-filter="design"]').click();
 });
