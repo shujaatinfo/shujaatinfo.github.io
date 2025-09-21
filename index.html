@@ -964,20 +964,7 @@
 </section>
 
 <style>
-/* Contact Section Layout */
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-info {
-  flex: 1;
-  min-width: 260px;
-}
-
+/* Contact Photo Responsive */
 .contact-photo {
   flex: 1;
   min-width: 260px;
@@ -988,24 +975,25 @@
   max-width: 785px;
   max-height: 908px;
   width: 100%;
+  height: auto;
   border-radius: 0px;
   box-shadow: 0 0px 0px rgba(0,0,0,0.12);
   border: 0px solid rgba(0,0,0,0.05);
 }
 
-/* Responsive */
+/* Responsive for Mobile */
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
     text-align: center;
   }
   .contact-photo img {
-    max-width: 100%;   /* 👈 ab image screen ke mutabiq badi ho jayegi */
+    max-width: 100%; /* Full width on mobile */
     height: auto;
-    margin: 0 auto;
   }
 }
 </style>
+
 
     <!-- Footer Section -->
     <footer>
