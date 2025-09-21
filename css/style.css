@@ -961,39 +961,26 @@ footer {
     margin-bottom: 50px;
 }
 
-/* Default (Laptop/Desktop) */
+/* Footer Logo */
 .footer-logo {
-    text-align: left; /* Ya jo original alignment hai */
+    text-align: left; /* Desktop pe left align */
 }
 
 .footer-logo-img {
-    display: inline-block; /* Inline block taake left alignment ho */
+    display: inline-block;
     margin-bottom: 15px;
     max-width: 150px;
 }
 
-/* Mobile (max-width 768px) */
-@media (max-width: 768px) {
-    .footer-logo {
-        text-align: center; /* Mobile pe parent center */
-    }
-
-    .footer-logo-img {
-        display: block;      /* Block banaye taake margin auto kaam kare */
-        margin: 0 auto 15px; /* Horizontally center */
-    }
-}
-
-
+/* Footer Social */
 .footer-social h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: var(--gold);
 }
 
-
-
 .footer-social .social-icons {
+    display: flex;
     justify-content: flex-start;
 }
 
@@ -1001,6 +988,7 @@ footer {
     margin: 0 10px 0 0;
 }
 
+/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -1010,6 +998,34 @@ footer {
 .footer-bottom p {
     color: var(--gray);
     font-size: 0.9rem;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center saari content */
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        text-align: center; /* Logo center */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-img {
+        display: block;
+        margin: 0 0 15px 0; /* Bottom margin only */
+    }
+
+    .footer-social .social-icons {
+        justify-content: center; /* Social icons center */
+    }
 }
 
 /* ===== Animations ===== */
