@@ -961,15 +961,29 @@ footer {
     margin-bottom: 50px;
 }
 
-.footer-logo h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+/* Default (Laptop/Desktop) */
+.footer-logo {
+    text-align: left; /* Ya jo original alignment hai */
 }
 
 .footer-logo-img {
-    max-width: 150px;
+    display: inline-block; /* Inline block taake left alignment ho */
     margin-bottom: 15px;
+    max-width: 150px;
 }
+
+/* Mobile (max-width 768px) */
+@media (max-width: 768px) {
+    .footer-logo {
+        text-align: center; /* Mobile pe parent center */
+    }
+
+    .footer-logo-img {
+        display: block;      /* Block banaye taake margin auto kaam kare */
+        margin: 0 auto 15px; /* Horizontally center */
+    }
+}
+
 
 .footer-social h3 {
     font-size: 1.2rem;
