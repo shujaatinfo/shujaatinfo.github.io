@@ -942,7 +942,7 @@ nav {
     }
 
     .contact-photo img {
-        max-width: 80%;  /* image responsive */
+        max-width: 100%;  /* 👈 ab mobile pe image full width le gi */
         height: auto;
         margin: 0 auto;
     }
