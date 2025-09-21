@@ -152,3 +152,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Graphic Designing wale button ko default click kar do
     document.querySelector('.filter-btn[data-filter="design"]').click();
 });
+
+
+// === Mobile Menu Toggle === //
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+
+
+
