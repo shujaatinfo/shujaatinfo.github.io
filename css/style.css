@@ -927,24 +927,33 @@ nav {
 }
 
 .contact-photo img {
-    max-width: 785px;
-    max-height: 908px;
     width: 100%;
+    max-width: 785px; /* Desktop size */
+    height: auto;
     border-radius: 0px;
     box-shadow: 0 0px 0px rgba(0,0,0,0.12);
     border: 0px solid rgba(0,0,0,0.05);
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+    .contact-content {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column;
         text-align: center;
     }
+
     .contact-photo img {
-        max-width: 220px;
+        max-width: 90%; /* Mobile pe photo responsive aur bada */
+        height: auto;
     }
 }
+
 
 
 
