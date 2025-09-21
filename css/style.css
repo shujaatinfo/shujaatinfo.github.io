@@ -922,7 +922,7 @@ nav {
 /* Contact Photo */
 .contact-photo {
     flex: 1;
-    min-width: 260px;
+    min-width: auto;
     text-align: center;
 }
 
@@ -949,7 +949,7 @@ nav {
     }
 
     .contact-photo img {
-        max-width: 90%; /* Mobile pe photo responsive aur bada */
+        max-width: 100%; /* Mobile pe photo responsive aur bada */
         height: auto;
     }
 }
