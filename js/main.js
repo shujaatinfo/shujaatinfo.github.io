@@ -158,13 +158,26 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu li a');
 
     if (menuToggle && navMenu) {
+        // Toggle open/close on menu button
         menuToggle.addEventListener('click', function () {
             navMenu.classList.toggle('active');
         });
+
+        // Close menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('active');
+            });
+        });
     }
 });
+
+
+
+
 
 
 
