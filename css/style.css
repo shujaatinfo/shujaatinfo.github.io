@@ -927,9 +927,8 @@ nav {
 }
 
 .contact-photo img {
-    width: 100%;
-    max-width: 785px; /* Desktop size */
-    height: auto;
+    width: 610px;
+    height: 706px;
     border-radius: 0px;
     box-shadow: 0 0px 0px rgba(0,0,0,0.12);
     border: 0px solid rgba(0,0,0,0.05);
@@ -950,7 +949,7 @@ nav {
 
     .contact-photo img {
         max-width: 100%; /* Mobile pe photo responsive aur bada */
-        height: auto;
+        height: 100%;
     }
 }
 
