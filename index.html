@@ -954,13 +954,13 @@
 
 </div>
 
-      <!-- Right: Photo instead of Form -->
-      <div class="contact-photo">
-        <img src="images/Contact03.png" alt="Shujaat Siddiqui" />
-      </div>
+<!-- Right: Photo instead of Form -->
+<div class="contact-photo">
+  <img src="images/Contact03.png" alt="Shujaat Siddiqui" />
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <style>
@@ -1000,7 +1000,9 @@
     text-align: center;
   }
   .contact-photo img {
-    max-width: 220px;
+    max-width: 80%;   /* 👈 ab image 80% screen le legi */
+    height: auto;     /* ratio maintain rahega */
+    margin: 0 auto;   /* center align */
   }
 }
 </style>
