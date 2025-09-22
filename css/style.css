@@ -1145,22 +1145,22 @@ footer {
 .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;           /* Initially hidden */
-    width: 250px;           /* Menu width */
-    height: auto;           /* Full screen ki jagah auto */
-    max-height: 90vh;       /* Screen ka 90% tak height */
+    right: -100%;                /* Initially hidden */
+    width: auto;                 /* Width auto, content ke hisaab se */
+    max-width: 250px;            /* Max width limit */
+    height: 100vh;               /* Full height jaise pehle */
     background-color: var(--dark-bg);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* Top se start */
-    padding: 20px;          /* Menu ke andar space */
+    padding: 20px;
     transition: var(--transition);
     z-index: 1000;
-    overflow-y: auto;       /* Agar content zyada ho to scroll */
+    overflow-y: auto;            /* Scroll agar content zyada ho */
 }
 
 .nav-menu.active {
-    right: 0;               /* Menu visible */
+    right: 0;                    /* Menu visible */
 }
 
 .nav-menu li {
