@@ -1181,18 +1181,22 @@ footer {
         width: auto;           /* Auto width for small screens */
         max-width: 200px;      /* Slightly smaller than desktop max */
     }
-}
-    }
-    
+
     .portfolio-filter {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .filter-btn {
         margin-bottom: 10px;
     }
 }
+
+/* ===== Scroll lock for mobile menu ===== */
+body.menu-open {
+    overflow: hidden; /* Scroll lock when menu is open */
+}
+
 
 @media screen and (max-width: 576px) {
     h1 {
