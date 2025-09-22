@@ -154,29 +154,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// === Mobile Menu Toggle with Scroll Lock === //
+// === Mobile Menu Toggle === //
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu li a');
-    const body = document.body;
 
     if (menuToggle && navMenu) {
         // Toggle open/close on menu button
         menuToggle.addEventListener('click', function () {
             navMenu.classList.toggle('active');
-            body.classList.toggle('menu-open'); // Scroll lock toggle
         });
 
         // Close menu on link click
         navLinks.forEach(link => {
             link.addEventListener('click', function () {
                 navMenu.classList.remove('active');
-                body.classList.remove('menu-open'); // Scroll unlock
             });
         });
     }
 });
+
 
 
 
