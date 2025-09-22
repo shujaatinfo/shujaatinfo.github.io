@@ -1178,8 +1178,8 @@ footer {
 /* ===== Responsive for Mobile ===== */
 @media (max-width: 768px) {
     .nav-menu {
-        width: auto;           /* Auto width for small screens */
-        max-width: 200px;      /* Slightly smaller than desktop max */
+        width: auto;           /* Menu width content ke hisaab se */
+        max-width: 200px;      /* Max 200px tak width */
     }
 
     .portfolio-filter {
@@ -1194,7 +1194,7 @@ footer {
 
 /* ===== Scroll lock for mobile menu ===== */
 body.menu-open {
-    overflow: hidden; /* Scroll lock when menu is open */
+    overflow: hidden; /* Page scroll lock jab menu open ho */
 }
 
 
