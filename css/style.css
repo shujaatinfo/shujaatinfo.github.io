@@ -1138,33 +1138,49 @@ footer {
         line-height: 1.6;
     }
     
+/* ===== Menu Toggle Button ===== */
 .menu-toggle {
     display: block;
+    cursor: pointer;
+    z-index: 1100; /* Above the menu */
 }
 
+/* ===== Navigation Menu ===== */
 .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;                /* Initially hidden */
-    width: auto;                 /* Width auto, content ke hisaab se */
-    max-width: 250px;            /* Max width limit */
-    height: 100vh;               /* Full height jaise pehle */
+    right: -100%;               /* Initially hidden */
+    width: auto;                /* Mobile menu width auto */
+    max-width: 250px;           /* Max width limit */
+    height: 100vh;              /* Full height */
     background-color: var(--dark-bg);
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Top se start */
+    justify-content: flex-start; /* Top aligned items */
     padding: 20px;
-    transition: var(--transition);
+    transition: right 0.4s ease; /* Smooth slide */
     z-index: 1000;
-    overflow-y: auto;            /* Scroll agar content zyada ho */
+    overflow-y: auto;           /* Scroll if content exceeds */
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2); /* Optional: shadow effect */
 }
 
+/* ===== Menu Active State ===== */
 .nav-menu.active {
-    right: 0;                    /* Menu visible */
+    right: 0;                  /* Menu visible */
 }
 
+/* ===== Menu Items ===== */
 .nav-menu li {
     margin: 15px 0;
+    list-style: none;
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        width: auto;           /* Auto width for small screens */
+        max-width: 200px;      /* Slightly smaller than desktop max */
+    }
 }
     }
     
