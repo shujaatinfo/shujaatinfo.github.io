@@ -1189,6 +1189,7 @@ footer {
     .nav-menu {
         width: auto;           /* Auto width for small screens */
         max-width: 200px;      /* Slightly smaller than desktop max */
+		padding-top: 60px;     /* First menu item toggle button se niche */
     }
 }
     }
